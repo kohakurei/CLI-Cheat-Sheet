@@ -15,3 +15,8 @@ ogr2ogr -f "ESRI Shapefile" -s_srs EPSG:2456 -t_srs EPSG:2456 -lco GEOMETRY=AS_X
 ```
 gdal_rasterize -a z -tr 2.5 2.5 -l layername point.shp dem.tif
 ```
+
+* ラスタ画像の座標系変換
+```
+gdalwarp -s_srs EPSG:*** -t_srs EPSG:*** -of "GTiff" in.tif out.tif
+```
