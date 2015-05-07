@@ -25,3 +25,11 @@ else:
 script_dir = os.path.dirname(os.path.abspath(__file__))
 abspath = os.path.realpath(os.path.join(script_dir, "relative_path"))
 ```
+
+* batファイルで指定した引数をPythonスクリプトに渡す
+
+```
+実行するPythonスクリプト名の後に「 %* 」を付ける。
+こうすることでバッチファイル側で指定したすべての引数を見ることができる
+※ %1~%9でも見ることはできるが、この場合は９つの引数までしか見ることができない。
+```
