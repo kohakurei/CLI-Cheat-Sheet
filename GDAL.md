@@ -20,9 +20,3 @@ gdal_rasterize -a z -tr 2.5 2.5 -l layername point.shp dem.tif
 ```
 gdalwarp -s_srs EPSG:*** -t_srs EPSG:*** -of "GTiff" in.tif out.tif
 ```
-
-* gdal2tilesの仕組み
-1. 引数に従ってプロセスの設定値を取り込む
-2. メタデータ～～
-3. 基準となるズームレベルのタイルを作成
-4. それ以外のズームレベルのタイルを作成
