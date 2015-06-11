@@ -12,3 +12,8 @@ aws s3 ls s3://<bucket name> --recursive | awk '{print $NF}' | grep PAN | grep -
 ```
 aws s3 ls s3://<bucket name> --recursive | awk '{print $NF}' | grep PAN | grep BASE | sed -e "s/BASE.TXT//"
 ```
+
+* 任意のディレクトリにamazon　s3からコピー
+```
+aws s3 cp s3://<bucket name>/<>/<>/ ./<>/<>/ --recursive
+```
