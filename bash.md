@@ -17,3 +17,8 @@ aws s3 ls s3://<bucket name> --recursive | awk '{print $NF}' | grep PAN | grep B
 ```
 aws s3 cp s3://<bucket name>/<>/<>/ ./<>/<>/ --recursive
 ```
+
+* tar解凍時に解凍先ディレクトリを指定
+```
+tar -zxvf ~~.tar.gz -C <extract to directory name>
+```
